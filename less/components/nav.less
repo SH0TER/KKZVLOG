@@ -1,0 +1,46 @@
+@import "../data/variables.less";
+@import "../data/mixins.less";
+
+nav{
+  background-color: @nav-background;
+  height: 50px;
+  .mixin-flexboxx();
+  .mixin_justify-content-center();
+
+  .nav-content{
+    .mixin-flexboxx();
+    .mixin_justify-content-space-between();
+    .mixin-align-items(center);
+  }
+
+  .main-menu{
+    a{
+      color: white;
+      text-decoration: none;
+      font: normal normal normal 14px/1.4em avenir-lt-w01_35-light1475496,sans-serif;
+      text-transform: uppercase;
+      cursor: pointer;
+      margin: 0 20px;
+      &:first-child{
+        margin: 0 20px 0 0;
+      }
+      &.checked{
+        color: #324571;
+      }
+    }
+  }
+}
+
+
+.links{
+  .mixin-flexboxx();
+  a{
+    text-decoration: none;
+    cursor: pointer;
+    margin: 0 15px;
+    i{
+      color: white;
+      font-size: 20px;
+    }
+  }
+}

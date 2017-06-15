@@ -1,0 +1,64 @@
+@import "../data/variables.less";
+@import "../data/mixins.less";
+
+section{
+  width: 990px;
+  margin: auto;
+  padding: 0 20px;
+  .mixin-flexboxx();
+  .mixin_justify-content-space-between();
+
+
+  .articles.main-page{
+    margin-right: 100px;
+    article{
+      padding: 60px 0 0px 0;
+      .top{
+        a{
+          text-decoration: none;
+          color: @title-text;
+          margin-top: 5px;
+          display: flex;
+          justify-content: flex-start;
+          h3{
+            font: normal normal bold 26px/1.4em avenir-lt-w01_85-heavy1475544,sans-serif;
+            font-size: 20px;
+            line-height: 1.2em;
+            border-bottom: 1px solid transparent;
+            &:hover{
+              border-bottom: 1px solid @title-text;
+            }
+          }
+        }
+        .data span{
+          font-size: 13px;
+          font-family: "open sans",sans-serif;
+          color: #A0A09F;
+        }
+      }
+      .content{
+        padding: 15px 0;
+        max-height: 100px;
+        overflow: hidden;
+        position: relative;
+        &::after{
+          //content: "";
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          height: 20px;
+          background: linear-gradient(to bottom, transparent, #fff);
+        }
+        p{
+          color: @title-text;
+          font-family: "open sans",sans-serif;
+          line-height: 1.6em;
+          font: normal normal normal 15px/1.4em avenir-lt-w01_35-light1475496,sans-serif;
+        }
+      }
+    }
+  }
+  .other-inf{
+    max-width: 260px;
+  }
+}

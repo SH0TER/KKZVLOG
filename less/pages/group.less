@@ -1,0 +1,57 @@
+div.group{
+  padding: 60px 0 0 0 ;
+  margin-right: 120px;
+
+  tr{
+    display: flex;
+
+  }
+
+  td{
+    display: block;
+    margin: 3px 5px 3px 0 ;
+    padding: 5px 20px;
+
+    border: 2px solid #D2D9DC;
+    border-radius: 4px;
+    box-shadow: inset 2px 2px 6px #EBEBEB, 0 0 0 5px #F7F9FA;
+
+
+    &:hover{
+      border: 2px solid #6389e1;
+    }
+    &:nth-child(1),
+    &.input{
+      width: 400px;
+      input{
+        width: 100%;
+      }
+    }
+    &:not(:nth-child(1)){
+      button{
+        width: 57px;
+      }
+      a p {
+        font-size: 12px;
+      }
+    }
+  }
+
+  a{
+    text-decoration: none;
+    text-align: start;
+    p{
+      font-family: open sans, sans-serif;
+      line-height: 1.4em;
+      font: normal normal normal 18px/1.4em avenir-lt-w01_85-heavy1475544, sans-serif;
+      color: #1D1D1F;
+    }
+    &:hover{
+      p{
+        color: black;
+      }
+    }
+  }
+
+}
+

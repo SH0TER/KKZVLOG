@@ -1,0 +1,48 @@
+@import "../data/mixins.less";
+@import "../data/variables.less";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.head-info,
+.nav-content,
+.foot-info{
+  width: 950px;
+}
+
+header{
+  height: 140px;
+  width: 100%;
+  position: relative;
+  background-color: @header-background;
+  box-shadow: inset 0px 15px 6px -12px rgba(160,160,159,1);
+  .mixin-horizontal-center();
+  .head-info{
+    padding-top: 50px;
+    position: relative;
+    a{
+      text-decoration: none;
+      cursor: pointer;
+    }
+    h1, span{
+      font: normal normal bold 26px/1.4em avenir-lt-w01_85-heavy1475544,sans-serif;
+      line-height: 1.2em;
+      color: @title-text;
+      vertical-align: baseline;
+      background: transparent;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    span{
+      line-height: 1.3em;
+      font-size: 20px;
+      text-transform: none;
+      position: absolute;
+      left: 0;
+      top: 90px;
+    }
+  }
+}
